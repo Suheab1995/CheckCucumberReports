@@ -32,4 +32,7 @@ jobs:
            access-token: ${{ secrets.TOKEN }}
            path: "**/cucumber-report.json"
            check-status-on-error: failure
-   
+      - name: Display the json file
+        run: |
+          cat **/cucumber-report.json
+          echo test, and deploy your project. 
